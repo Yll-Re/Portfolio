@@ -157,6 +157,10 @@ body a {
     align-items: center;
   }
 
+  .ProjectDiv:nth-child(3) {
+    flex-direction: column;
+  }
+
   .ProjectDiv img {
     order: -1;
     margin-right: 0;
