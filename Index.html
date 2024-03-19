@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<div class="bigContainer">
+  <div class="profile-icon"></div>
+
+  <div class="container">
+    <nav class="navContainer">
+      <ul class="btnContainer">
+        <button class="nav-btn" onclick="showContent('about')">About</button>
+        <button class="nav-btn" onclick="showContent('projects')">Projects</button>
+        <button class="nav-btn" onclick="showContent('contact')">Contact</button>
+      </ul>
+    </nav>
+  
+    <div class="content" id="about-content">
+      <h2>About Me</h2>
+      <br>
+      <p>I know this looks crazy but yes that pikachu is actually me.</p>
+      <br><br>
+      <p>No, but for real this is just a mock up profolio that is made for Life at Gjirafa Frontend course assignment.</p>
+      <br>
+      <p>It is made with HTML/CSS except for a tiny bit of javascript for the buttons.</p>
+      <p>I tried to make is as simple as possible.</p>
+    </div>
+    <div class="content" id="projects-content">
+      <h2>Projects</h2>
+      <div class="ProjectDiv">
+        <a href="https://github.com/Yll-Re/Gr29Website" target="_blank">
+          <img src="/Images/EsportSite.png" alt="Image of the website" width="400" height="200">
+        </a>
+        <div>
+          <a href="https://github.com/Yll-Re/Gr29Website" target="_blank"><h1>Esport Website</h1></a>
+          <p>
+            This website was build for a school project. <br>
+            It is not hosted anywhere at the moment <br>
+            but you can check out the github page!
+          </p>
+        </div>
+      </div>
+      <div class="ProjectDiv">
+        <a href="https://github.com/Yll-Re/Databaza-SQL" target="_blank">
+          <img src="/Images/Database.png" alt="Image of the website" width="400" height="200">
+        </a>
+        <div>
+          <a href="https://github.com/Yll-Re/Databaza-SQL" target="_blank"><h1>Hospital Database</h1></a>
+          <p>
+            This is also a school project. <br>
+            Its a SQL Database for a hospital. <br>
+            You can check it out on the github page.
+          </p>
+        </div>
+      </div>
+      <div class="ProjectDiv">
+        <a href="https://github.com/Yll-Re/Gr29Website" target="_blank">
+          <img src="/Images/TCPServer.png" alt="Image of the website" width="400" height="200">
+        </a>
+        <div>
+          <a href="https://github.com/Yll-Re/Gr29Website" target="_blank"><h1>TCP Server</h1></a>
+          <p>
+            A TCP server build in python. <br>
+            Included on the github page is a server and the client. <br>
+            You can send several requests to the server as a <br>
+            client.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="content" id="contact-content">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label >Message:</label><br>
+        <textarea class="message" rows="4" cols="50" required></textarea><br>
+        <button class="nav-btn" type="submit">Send Request</button>
+      </form>
+      <p>Or you can contact me at ylllumi0@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p> @ 2024 Portfolio. All rights reserved to me I guess?.</p>
+</footer>
+
+
+<script>
+  const contents = document.querySelectorAll('.content');
+
+  function showContent(contentId) {
+    contents.forEach(content => {
+      content.classList.remove('active');
+    });
+    document.getElementById(contentId + '-content').classList.add('active');
+  }
+</script>
+
+</body>
+</html>
