@@ -23,9 +23,9 @@ body {
   height: auto;
   overflow: hidden;
   border-radius: 20px;
-  display: flex; /* Change from display: block; to display: flex; */
+  display: flex;
   justify-content: center;
-  align-items: center; /* Center items horizontally and vertically */
+  align-items: center;
   flex-direction: column;
   overflow-y: auto;
 }
@@ -40,7 +40,7 @@ body {
   background-position: center;
   margin-top: 20px;
   margin-left: 45%;
-  align-self: center; /* Center the icon horizontally */
+  align-self: center;
   z-index: 6;
 }
 
@@ -153,20 +153,20 @@ body a {
   }
 
   .ProjectDiv {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items vertically */
+    flex-direction: column;
+    align-items: center;
   }
 
   .ProjectDiv img {
-    order: -1; /* Move the image to the top */
-    margin-right: 0; /* Remove right margin */
-    margin-bottom: 20px; /* Add bottom margin */
+    order: -1;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .ProjectDiv h1,
   .ProjectDiv p {
-    margin-left: 0; /* Remove left margin */
-    text-align: center; /* Center text */
+    margin-left: 0;
+    text-align: center;
   }
 }
 
